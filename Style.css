@@ -1,15 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
 body {
   margin: 15px;
   font-size: 12px;
   line-height: 1.6;
   width: 1200px;
 }
-.clearfix::after { 
-    content: '';
-    clear: both; 
-    display: inline;
-   }
 
 .logotype {
   font-size: 12px;
@@ -17,30 +13,27 @@ body {
   color: #171717;
   padding: 10px;
   display: inline;
-  }
+}
 
-  .clearfix::after { 
-    content: '';
-    clear: both; 
-    display: block;
-   }
+.clearfix::after { 
+  content: '';
+  clear: both; 
+  display: block;
+}
+
+.nav-menu {
+  float: right;
+}
   
-.nav-link-active  {
+.nav-link {
+  vertical-align: top;
+  margin: 0 15px;
+  text-decoration: none;
+  padding: 10px;
+  color: #171717;
+}
+.nav-link-active {
   color: #C9A96E;
   text-decoration: none;
   padding: 10px;
-  
-  }
-
-  .nav-link {
-    vertical-align: top;
-    margin: 0 15px;
-    text-decoration: none;
-    padding: 10px;
-   
-    color: #171717;
-  }
-  
-  .nav-menu {
-    float: right;
-  }
+}
