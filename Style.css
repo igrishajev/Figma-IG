@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+body {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+  width: 1200px;
+}
+*,
+ *::before,
+ *::after {
+  box-sizing: border-box;
+}
+
+.clearfix ::after {
+  content: '';
+  clear: 
+  display: block;
+}
+
+.logotype {
+  font-size: 12px;
+  font-weight: 400;
+  color: #171717;
+  padding: 10px;
+  float: left;
+}
+
+.nav-link-active  {
+  color: #C9A96E;
+  text-decoration: none;
+  padding: 10px;
+  float: right;
+  }
+
+  .nav-link {
+    vertical-align: top;
+    margin: 0 15px;
+    text-decoration: none;
+    padding: 10px;
+    float: right;
+    color: #171717;
+  }
+  
