@@ -7,18 +7,18 @@ body {
   width: 1200px;
 }
 
+.clearfix::after { 
+  content: '';
+  clear: both; 
+  display: inline;
+}
+
 .logotype {
   font-size: 12px;
   font-weight: 400;
   color: #171717;
   padding: 10px;
   display: inline;
-}
-
-.clearfix::after { 
-  content: '';
-  clear: both; 
-  display: block;
 }
 
 .nav-menu {
@@ -32,6 +32,7 @@ body {
   padding: 10px;
   color: #171717;
 }
+
 .nav-link-active {
   color: #C9A96E;
   text-decoration: none;
