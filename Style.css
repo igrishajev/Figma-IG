@@ -28,18 +28,27 @@
 body {
   margin: 2px 1em 0 auto;
 }
+.header {
+  display: block;
+}
+
 .clearfix::after { 
   content: '';
   clear: both; 
-  display: inline;
+  display: block;
+}
+
+.container::after {
+content: '';
+clear: both;
+display: inline;
 }
 
 .container {
   max-width: 100%;
-  max-height: 100%;
-  margin-right: 0;
-  margin: 0;
-  margin-left: 0;
+  width: 1760px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .header-logo {
@@ -48,16 +57,15 @@ body {
   font-family: PT Serif, serif;
   color: #171717;
   display: inline;
-  position: absolute;
   top: 10px;
   left: 50px;
  }
 
 .nav-menu {
   float: right;
-  position: relative;
   top: 30px;
   right: 50px;
+  font-family: PT Serif, serif;
 }
   
 .nav-menu-item.active {
@@ -66,9 +74,9 @@ body {
 
 .nav-menu-item {
   vertical-align: top;
-  margin: 40px;
   text-decoration: none;
-  padding: 10px;
+  padding: 10px; 20px;
+  display: inline-block;
   color: #171717;
 }
 .nav-menu-item:hover {
