@@ -26,10 +26,7 @@
 }
 
 body {
-  margin: 2px 1em 0 auto;
-}
-.header {
-  display: block;
+  margin: 0;
 }
 
 .clearfix::after { 
@@ -39,18 +36,27 @@ body {
 }
 
 .container::after {
-content: '';
-clear: both;
-display: inline;
+  content: '';
+  clear: both;
+  display: inline;
 }
 
 .container {
   max-width: 100%;
-  width: 1760px;
-  margin-right: auto;
+  width: 1170px;
+  /* margin-right: auto; */
   margin-left: auto;
 }
 
+.container-fluid {
+  max-width: 100%;
+}
+
+.container-fluid::after {
+  content: '';
+  clear: both;
+  display: inline;
+}
 .header-logo {
   font-size: 12px;
   font-weight: 700;
