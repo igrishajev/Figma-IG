@@ -3,30 +3,30 @@
   font-family: 'PT Serif';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/pt-serif-v12-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/pt-serif-v12-latin-regular.eot'); /* IE9 Compat Modes */
   src: local(''),
-       url('../fonts/pt-serif-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/pt-serif-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/pt-serif-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/pt-serif-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/pt-serif-v12-latin-regular.svg#PTSerif') format('svg'); /* Legacy iOS */
+       url('./fonts/pt-serif-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/pt-serif-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/pt-serif-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/pt-serif-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/pt-serif-v12-latin-regular.svg#PTSerif') format('svg'); /* Legacy iOS */
 }
 /* pt-serif-700 - latin */
 @font-face {
   font-family: 'PT Serif';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/pt-serif-v12-latin-700.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/pt-serif-v12-latin-700.eot'); /* IE9 Compat Modes */
   src: local(''),
-       url('../fonts/pt-serif-v12-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/pt-serif-v12-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/pt-serif-v12-latin-700.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/pt-serif-v12-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/pt-serif-v12-latin-700.svg#PTSerif') format('svg'); /* Legacy iOS */
+       url('./fonts/pt-serif-v12-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/pt-serif-v12-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/pt-serif-v12-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/pt-serif-v12-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/pt-serif-v12-latin-700.svg#PTSerif') format('svg'); /* Legacy iOS */
 }
 
 body {
-  margin: auto;
+  margin: 2px 1em 0 auto;
 }
 .clearfix::after { 
   content: '';
@@ -36,20 +36,28 @@ body {
 
 .container {
   max-width: 100%;
-  margin-right: 0 auto;
-  margin-left: 0 aut;
+  max-height: 100%;
+  margin-right: 0;
+  margin: 0;
+  margin-left: 0;
 }
+
 .header-logo {
   font-size: 12px;
   font-weight: 700;
   font-family: PT Serif;
   color: #171717;
   display: inline;
-  margin-left: 10pc;
+  position: absolute;
+  top: 10px;
+  left: 50px;
  }
 
 .nav-menu {
   float: right;
+  position: relative;
+  top: 30px;
+  right: 50px;
 }
   
 .nav-menu-item.active {
@@ -58,7 +66,7 @@ body {
 
 .nav-menu-item {
   vertical-align: top;
-  margin: 0 15px;
+  margin: 40px;
   text-decoration: none;
   padding: 10px;
   color: #171717;
