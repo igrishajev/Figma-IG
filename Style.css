@@ -45,7 +45,7 @@ body {
 .header-logo {
   font-size: 12px;
   font-weight: 700;
-  font-family: PT Serif;
+  font-family: PT Serif, serif;
   color: #171717;
   display: inline;
   position: absolute;
