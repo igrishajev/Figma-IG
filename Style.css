@@ -26,7 +26,7 @@
 }
 
 body {
-  margin: 0;
+margin: 0;
 }
 
 .clearfix::after { 
@@ -42,9 +42,9 @@ body {
 }
 
 .container {
-  max-width: 100%;
   width: 1170px;
-  /* margin-right: auto; */
+  max-width: 100%;
+  margin-right: auto;
   margin-left: auto;
 }
 
@@ -81,7 +81,7 @@ body {
 .nav-menu-item {
   vertical-align: top;
   text-decoration: none;
-  padding: 10px; 20px;
+  padding: 10px 20px;
   display: inline-block;
   color: #171717;
 }
