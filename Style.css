@@ -1,43 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
-body {
-  margin: 0;
-  font-size: 12px;
-  line-height: 1.6;
-  width: 1200px;
+/* pt-serif-regular - latin */
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/pt-serif-v12-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./fonts/pt-serif-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/pt-serif-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/pt-serif-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/pt-serif-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/pt-serif-v12-latin-regular.svg#PTSerif') format('svg'); /* Legacy iOS */
 }
-*,
- *::before,
- *::after {
-  box-sizing: border-box;
+/* pt-serif-700 - latin */
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/pt-serif-v12-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./fonts/pt-serif-v12-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/pt-serif-v12-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/pt-serif-v12-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/pt-serif-v12-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/pt-serif-v12-latin-700.svg#PTSerif') format('svg'); /* Legacy iOS */
 }
 
-.clearfix ::after {
+.header {
+  margin: 0px;
+  padding: 0px;
+  top: 0px;
+}
+
+.clearfix::after { 
   content: '';
-  clear: 
+  clear: both; 
+  display: block;
+} 
+
+.container {
+  width: 1760px;
+  max-width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.container::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.container-fluid {
+  max-width: 100%;
+}
+
+.container-fluid::after {
+  content: '';
+  clear: both;
   display: block;
 }
 
-.logotype {
+.header-logo {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 700;
+  font-family: PT Serif, serif;
   color: #171717;
-  padding: 10px;
+  display: inline;
+  top: 0px;
+  left: 80px;
+  padding: 5px;
   float: left;
+ }
+
+.nav-menu {
+  float: right;
+  top: 30px;
+  right: 50px;
+  margin-top: 10px;
+  font-family: PT Serif, serif;
+}
+  
+.nav-menu-item.active {
+  color: #C9A96E;
+  font-family: PT Serif, serif;
 }
 
-.nav-link-active  {
-  color: #C9A96E;
+.nav-menu-item {
+  vertical-align: top;
   text-decoration: none;
   padding: 10px;
-  float: right;
-  }
+  display: inline-block;
+  color: #171717;
+}
 
-  .nav-link {
-    vertical-align: top;
-    margin: 0 15px;
-    text-decoration: none;
-    padding: 10px;
-    float: right;
-    color: #171717;
-  }
-  
+.nav-menu-item:hover {
+  color: #C9A96E;
+}
+
