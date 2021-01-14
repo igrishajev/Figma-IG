@@ -25,26 +25,23 @@
        url('./fonts/pt-serif-v12-latin-700.svg#PTSerif') format('svg'); /* Legacy iOS */
 }
 
-body {
-  margin: 0;
+.header {
+  margin: 0px;
+  padding: 0px;
+  top: 0px;
 }
-header {
-  margin: auto;
-  padding: 30px;
-}
+
 .clearfix::after { 
   content: '';
   clear: both; 
-  display: block;
-  /* there are .clearfix:after and .container:after. 
-  Q. what is the difference? Why do we need them? */
+  display: inline;
 } 
 
 .container {
   width: 1760px;
   max-width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right 0px;
+  margin-left: 0px;
 }
 
 .container::after {
@@ -68,20 +65,23 @@ header {
   font-family: PT Serif, serif;
   color: #171717;
   display: inline;
-  top: 10px;
+  top: 0px;
   left: 50px;
-  padding: 70px;
+  padding: 5px;
+  float: left;
  }
 
 .nav-menu {
   float: right;
   top: 30px;
   right: 50px;
+  margin-top: 10px;
   font-family: PT Serif, serif;
 }
   
 .nav-menu-item.active {
   color: #C9A96E;
+  font-family: PT Serif, serif;
 }
 
 .nav-menu-item {
