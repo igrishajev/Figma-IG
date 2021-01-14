@@ -34,20 +34,20 @@
 .clearfix::after { 
   content: '';
   clear: both; 
-  display: inline;
+  display: block;
 } 
 
 .container {
   width: 1760px;
   max-width: 100%;
-  margin-right 0px;
-  margin-left: 0px;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .container::after {
   content: '';
   clear: both;
-  display: inline;
+  display: block;
 }
 .container-fluid {
   max-width: 100%;
@@ -56,7 +56,7 @@
 .container-fluid::after {
   content: '';
   clear: both;
-  display: inline;
+  display: block;
 }
 
 .header-logo {
@@ -66,7 +66,7 @@
   color: #171717;
   display: inline;
   top: 0px;
-  left: 50px;
+  left: 80px;
   padding: 5px;
   float: left;
  }
